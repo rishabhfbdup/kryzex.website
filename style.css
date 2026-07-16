@@ -168,7 +168,7 @@ section h2::after {
     margin-bottom: 50px;
 }
 
-/* Leadership Grid Styling */
+/* Leadership Grid Styling - Fixed for 3 Cards */
 .founder-section {
     margin-top: 60px;
     text-align: center;
@@ -182,9 +182,9 @@ section h2::after {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px; /* 3 कार्ड्स के लिए चौड़ाई बढ़ा दी गई है */
     margin: 0 auto;
 }
 
@@ -235,6 +235,7 @@ section h2::after {
     color: #64748b;
     font-size: 0.95rem;
     margin-bottom: 20px;
+    line-height: 1.6;
     flex-grow: 1;
 }
 

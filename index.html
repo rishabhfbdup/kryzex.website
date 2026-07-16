@@ -3,43 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kryzex Technologies</title>
+    <title>Kryzex Technologies - भविष्य का डिजिटल बिज़नेस</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">Kryzex <span>Technologies</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">होम</a></li>
+            <li><a href="#about">हमारे बारे में</a></li>
+            <li><a href="#services">सेवाएं</a></li>
+            <li><a href="#contact">संपर्क</a></li>
+        </ul>
+    </nav>
 
-    <header>
-        <div class="logo">Kryzex Technologies</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Building the Future of Digital Business</h1>
+            <p>हम छोटे और बड़े व्यवसायों को डिजिटल बनाने के लिए बेहतरीन टेक सॉल्यूशंस प्रदान करते हैं।</p>
+            <a href="#contact" class="btn">शुरुआत करें</a>
+        </div>
+    </section>
 
-    <section class="hero">
-        <h1>Building the Future of Digital Business</h1>
-        <p>हम छोटे और बड़े व्यवसायों को डिजिटल बनाने के लिए बेहतरीन टेक सॉल्यूशंस प्रदान करते हैं।</p>
-        <a href="#contact" class="btn">Get Started</a>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>हमारे बारे में</h2>
+            <div class="about-flex">
+                <div class="about-text">
+                    <p>Kryzex Technologies में हमारा लक्ष्य तकनीक के माध्यम से आपके बिज़नेस को नई ऊंचाइयों पर ले जाना है। हम सिर्फ कोड नहीं लिखते, हम आपके सपनों को डिजिटल हकीकत में बदलते हैं।</p>
+                    <p>हमारी टीम आधुनिक टूल्स और बेहतरीन डिजाइन के साथ ऐसे प्रोडक्ट्स बनाती है जो न सिर्फ दिखने में सुंदर हैं, बल्कि चलने में भी दमदार हैं।</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>App Development</h3>
-                <p>Apni Dukaan Register जैसे कस्टमाइज्ड ऐप्स का निर्माण।</p>
+        <div class="container">
+            <h2>हमारी सेवाएं</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Development</h3>
+                    <p>Android और iOS के लिए कस्टमाइज्ड और तेज़ ऐप्स का निर्माण।</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>आपके बिज़नेस के लिए सुरक्षित और रिस्पॉन्सिव वेबसाइट्स।</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>SEO और सोशल मीडिया के जरिए आपके ब्रांड की पहुँच बढ़ाना।</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>आपके बिज़नेस के लिए तेज़ और सुरक्षित वेबसाइट्स।</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>संपर्क करें</h2>
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h3>आओ मिलकर कुछ बड़ा बनाएं!</h3>
+                    <p><i class="fas fa-envelope"></i> contact@kryzex.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> भारत</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="आपका नाम" required>
+                    <input type="email" placeholder="आपकी ईमेल" required>
+                    <textarea placeholder="आपका संदेश" rows="5" required></textarea>
+                    <button type="submit" class="btn">भेजें</button>
+                </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Kryzex Technologies. All Rights Reserved.</p>
+        <p>&copy; 2024 Kryzex Technologies. सभी अधिकार सुरक्षित।</p>
     </footer>
-
 </body>
 </html>

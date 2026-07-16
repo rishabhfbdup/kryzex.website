@@ -155,18 +155,12 @@ section h2::after {
 
 .founder-card {
     background: #f8fafc;
-    max-width: 450px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 40px 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     border: 1px solid #e2e8f0;
-    transition: 0.3s ease;
-}
-
-.founder-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 .founder-img {
@@ -201,9 +195,8 @@ section h2::after {
 }
 
 .founder-card .bio {
-    font-style: italic;
     color: #64748b;
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -216,6 +209,77 @@ section h2::after {
 
 .founder-social a:hover {
     color: #38bdf8;
+}
+
+/* App Section Styling */
+.app-section {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+}
+
+.app-logo-box {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+.app-preview-logo {
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.app-desc {
+    max-width: 650px;
+    margin: 20px auto 30px;
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+
+.coming-soon {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 6px 24px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: pulse 2s infinite;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.store-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.store-btn i {
+    margin-right: 8px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 /* Services Section */
@@ -292,4 +356,5 @@ footer {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.5rem; }
     .contact-flex { flex-direction: column; }
+    .store-buttons { flex-direction: column; align-items: center; }
 }

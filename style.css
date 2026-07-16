@@ -138,6 +138,84 @@ section h2::after {
     max-width: 800px;
     margin: auto;
     font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+/* Founder Styling */
+.founder-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.founder-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+.founder-card {
+    background: #f8fafc;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    transition: 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.founder-img {
+    width: 100px;
+    height: 100px;
+    background: #e2e8f0;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-img i {
+    font-size: 3rem;
+    color: #475569;
+}
+
+.founder-card h4 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.founder-card .title {
+    color: #38bdf8;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.founder-card .bio {
+    font-style: italic;
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.founder-social a {
+    color: #475569;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.founder-social a:hover {
+    color: #38bdf8;
 }
 
 /* Services Section */

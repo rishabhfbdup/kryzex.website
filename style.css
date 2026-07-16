@@ -141,26 +141,36 @@ section h2::after {
     margin-bottom: 50px;
 }
 
-/* Founder Styling */
+/* Founder & Team Grid Styling */
 .founder-section {
     margin-top: 60px;
     text-align: center;
 }
 
 .founder-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 40px;
     color: #0f172a;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .founder-card {
     background: #f8fafc;
-    max-width: 550px;
-    margin: 0 auto;
     padding: 40px 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     border: 1px solid #e2e8f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .founder-img {
@@ -196,8 +206,9 @@ section h2::after {
 
 .founder-card .bio {
     color: #64748b;
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .founder-social a {

@@ -6,6 +6,61 @@
     <title>Kryzex Technologies - Innovation Beyond Limits</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Legal Policy Modal Styles */
+        .legal-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+        .legal-modal-content {
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 5% auto;
+            padding: 30px;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        .legal-modal-content h2 {
+            color: #38bdf8;
+            margin-top: 0;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 10px;
+        }
+        .close-modal {
+            color: #94a3b8;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-modal:hover { color: #f8fafc; }
+        .footer-legal-links {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-legal-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        .footer-legal-links a:hover { color: #38bdf8; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -253,6 +308,61 @@
 
     <footer>
         <p>&copy; 2026 Kryzex Technologies. सभी अधिकार सुरक्षित।</p>
+        <div class="footer-legal-links">
+            <a href="javascript:void(0)" onclick="openModal('privacyModal')">Privacy Policy</a> | 
+            <a href="javascript:void(0)" onclick="openModal('termsModal')">Terms & Conditions</a> | 
+            <a href="javascript:void(0)" onclick="openModal('refundModal')">Refund Policy</a>
+        </div>
     </footer>
+
+    <div id="privacyModal" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal" onclick="closeModal('privacyModal')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated: July 2026</strong></p>
+            <p>Kryzex Technologies operates the 'Apni Dukaan Register' application and the kryzex.com website. We value your privacy and are committed to protecting your personal information.</p>
+            <h3>Information Collection and Use</h3>
+            <p>We collect essential information, such as mobile numbers for OTP authentication and local business data to enable offline and cloud synchronization features. Your data is encrypted and stored securely using Room Database and trusted cloud services.</p>
+            <h3>Data Security</h3>
+            <p>We implement strict security measures to protect your information against unauthorized access, loss, or misuse.</p>
+            <p>If you have any questions, contact us at <strong>contact@kryzex.com</strong>.</p>
+        </div>
+    </div>
+
+    <div id="termsModal" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal" onclick="closeModal('termsModal')">&times;</span>
+            <h2>Terms & Conditions</h2>
+            <p>Welcome to Kryzex Technologies! By accessing our website or downloading our applications, you agree to comply with the following terms:</p>
+            <h3>Usage Rules</h3>
+            <p>1. Users must provide accurate information when registering.<br>2. All source codes, designs, and content are the sole property of Kryzex Technologies.<br>3. Any unauthorized reverse engineering or distribution of our software is strictly prohibited.</p>
+            <h3>Limitation of Liability</h3>
+            <p>Kryzex Technologies is not responsible for indirect operational losses incurred through external misuse of our digital tools.</p>
+        </div>
+    </div>
+
+    <div id="refundModal" class="legal-modal">
+        <div class="legal-modal-content">
+            <span class="close-modal" onclick="closeModal('refundModal')">&times;</span>
+            <h2>Refund & Cancellation Policy</h2>
+            <p>At Kryzex Technologies, we aim to ensure complete satisfaction with our software services.</p>
+            <h3>Cancellation & Refunds</h3>
+            <p>1. Subscription services or paid features purchased via 'Apni Dukaan Register' can be canceled within 7 days of purchase.<br>2. Approved refunds will be credited back to the original payment source within 5-7 business days.<br>3. For any payment issues, please write to <strong>contact@kryzex.com</strong>.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('legal-modal')) {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

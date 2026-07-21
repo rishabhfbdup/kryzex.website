@@ -74,6 +74,71 @@
         .company-social a:hover {
             color: #0ea5e9;
         }
+
+        /* Urgent Hiring Section Custom Styles */
+        .hiring-badge {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .job-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 25px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .job-title {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .job-location {
+            color: #10b981;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        .job-details-list {
+            margin: 15px 0;
+            padding-left: 20px;
+            color: #cbd5e1;
+        }
+        .job-details-list li {
+            margin-bottom: 8px;
+        }
+        .perks-grid {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        .perk-tag {
+            background: #0f172a;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 <body>
@@ -272,14 +337,39 @@
     <section id="careers" class="careers-section">
         <div class="container">
             <h2>Careers at Kryzex</h2>
-            <p class="careers-intro">क्या आप तकनीक के भविष्य को बदलने के लिए तैयार हैं? Kryzex Technologies में हम हमेशा ऐसे जुनूनी लोगों की तलाश में रहते हैं जो लीक से हटकर सोच सकते हैं।</p>
+            <span class="hiring-badge"><i class="fas fa-fire"></i> URGENT HIRING — ALL INDIA</span>
+            <p class="careers-intro">क्या आप तकनीक और सेल्स के क्षेत्र में भारत के रिटेल सेक्टर को बदलने के लिए तैयार हैं? Kryzex Technologies पूरे भारत में ऊर्जावान युवाओं को अपनी टीम से जोड़ रही है!</p>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span><i class="fas fa-user-check" style="color: #38bdf8;"></i> Field Sales & Merchant Onboarding Executive</span>
+                    <span class="job-location"><i class="fas fa-map-marker-alt"></i> PAN India (Multiple Cities)</span>
+                </div>
+                <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 15px;"><strong>Project:</strong> Apni Dukaan Register App Expansion</p>
+                
+                <p><strong>Responsibilities (जिम्मेदारियां):</strong></p>
+                <ul class="job-details-list">
+                    <li>अपने क्षेत्र के रिटेल दुकानदारों, किराना स्टोर्स और व्यापारियों से व्यक्तिगत रूप से मिलना।</li>
+                    <li>उन्हें <strong>Apni Dukaan Register</strong> ऐप की उपयोगिता समझाना और ऐप डाउनलोड करवाकर ऑनबोर्ड करना।</li>
+                    <li>दुकानदारों को ऐप के फीचर्स (डिजिटल बिलिंग, बहीखाता, इन्वेंट्री) का डेमो देना।</li>
+                    <li>दैनिक ऑनबोर्डिंग टारगेट्स को पूरा करना और रिपोर्टिंग मैनेजर को रिपोर्ट सबमिट करना।</li>
+                </ul>
+
+                <p><strong>Perks & Compensation:</strong></p>
+                <div class="perks-grid">
+                    <span class="perk-tag">💼 Fixed Salary + High Incentives</span>
+                    <span class="perk-tag">⛽ Travel & Daily Allowance</span>
+                    <span class="perk-tag">🏆 Performance Bonuses</span>
+                    <span class="perk-tag">📈 Fast-Track Career Growth</span>
+                </div>
+            </div>
             
-            <div class="apply-box">
-                <i class="fas fa-briefcase" style="font-size: 3rem; color: #38bdf8; margin-bottom: 20px;"></i>
-                <h3>Join Our Remote Team!</h3>
-                <p style="margin-bottom: 20px;">हम वर्तमान में <strong>Frontend Devs, App Interns, और UI/UX Designers</strong> की तलाश कर रहे हैं।</p>
-                <p>यदि आप हमारे साथ काम करने के इच्छुक हैं, तो अपना रिज्यूमे और पोर्टफोलियो सीधे ईमेल करें:</p>
-                <h3 style="color: #38bdf8; margin-top: 15px; font-size: 1.8rem;">careers@kryzex.com</h3>
+            <div class="apply-box" style="margin-top: 30px;">
+                <i class="fas fa-paper-plane" style="font-size: 3rem; color: #38bdf8; margin-bottom: 20px;"></i>
+                <h3>How to Apply?</h3>
+                <p style="margin-bottom: 15px;">यदि आप इस पद के लिए या **Frontend Devs, App Interns, UI/UX Designers** के लिए अप्लाई करना चाहते हैं, तो अपना नाम, शहर और रिज्यूमे हमें तुरंत भेजें:</p>
+                <h3 style="color: #38bdf8; margin-top: 10px; font-size: 1.8rem;">careers@kryzex.com</h3>
+                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 10px;">(Email Subject Lines: "Application for Field Sales Executive - [Your City]")</p>
             </div>
         </div>
     </section>

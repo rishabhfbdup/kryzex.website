@@ -64,12 +64,19 @@
         .company-social {
             margin-top: 15px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
         .company-social a {
             color: #38bdf8;
-            font-size: 1.5rem;
-            margin: 0 10px;
+            font-size: 1.2rem;
             transition: color 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
         .company-social a:hover {
             color: #0ea5e9;
@@ -192,7 +199,9 @@
             <div class="founder-section">
                 <h3>Our Leadership Team</h3>
                 <div class="company-social" style="margin-bottom: 25px;">
-                    <a href="https://www.linkedin.com/company/kryzex-technologies/" target="_blank" title="Kryzex Technologies LinkedIn"><i class="fab fa-linkedin"></i> Follow Kryzex Technologies on LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/kryzex-technologies/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.facebook.com/share/19FvzHwCxQ/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com/kryzextechnologies?igsh=c2EyYzlyeXlsMGI5" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
                 </div>
                 <div class="team-grid" style="display: flex; flex-direction: column; align-items: center; gap: 40px; max-width: 800px; margin: 0 auto;">
                     
@@ -416,28 +425,16 @@
     <footer>
         <p>&copy; 2026 Kryzex Technologies. सभी अधिकार सुरक्षित।</p>
         <div class="company-social">
-            <a href="https://www.linkedin.com/company/kryzex-technologies/" target="_blank" title="Kryzex Technologies LinkedIn"><i class="fab fa-linkedin"></i> Kryzex Technologies</a>
+            <a href="https://www.linkedin.com/company/kryzex-technologies/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.facebook.com/share/19FvzHwCxQ/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/kryzextechnologies?igsh=c2EyYzlyeXlsMGI5" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
         </div>
         <div class="footer-legal-links">
-            <a href="javascript:void(0)" onclick="openModal('privacyModal')">Privacy Policy</a> | 
+            <a href="https://kryzex.com/privacy-policy.html" target="_blank">Privacy Policy</a> | 
             <a href="javascript:void(0)" onclick="openModal('termsModal')">Terms & Conditions</a> | 
             <a href="javascript:void(0)" onclick="openModal('refundModal')">Refund Policy</a>
         </div>
     </footer>
-
-    <div id="privacyModal" class="legal-modal">
-        <div class="legal-modal-content">
-            <span class="close-modal" onclick="closeModal('privacyModal')">&times;</span>
-            <h2>Privacy Policy</h2>
-            <p><strong>Last Updated: July 2026</strong></p>
-            <p>Kryzex Technologies operates the 'Apni Dukaan Register' application and the kryzex.com website. We value your privacy and are committed to protecting your personal information.</p>
-            <h3>Information Collection and Use</h3>
-            <p>We collect essential information, such as mobile numbers for OTP authentication and local business data to enable offline and cloud synchronization features. Your data is encrypted and stored securely using Room Database and trusted cloud services.</p>
-            <h3>Data Security</h3>
-            <p>We implement strict security measures to protect your information against unauthorized access, loss, or misuse.</p>
-            <p>If you have any questions, contact us at <strong>contact@kryzex.com</strong>.</p>
-        </div>
-    </div>
 
     <div id="termsModal" class="legal-modal">
         <div class="legal-modal-content">
